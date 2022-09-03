@@ -5,7 +5,7 @@ import {
   FaUser,
 } from 'react-icons/fa';
 import { BiMenuAltRight } from 'react-icons/bi';
-import { BsInfoCircle, BsDownload } from 'react-icons/bs';
+import { BsInfoCircle } from 'react-icons/bs';
 
 import Image from 'next/image';
 
