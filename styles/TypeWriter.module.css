@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.dynamic h1 {
+  position: relative;
+  width: max-content;
+  margin-top: 20px;
+}
+
+.dynamic h1::before,
+.dynamic h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dynamic h1::before {
+  background: #0a192f;
+  animation: typewriter 5s steps(13) 1s forwards infinite alternate;
+}
+
+.dynamic h1::after {
+  width: 0.125em;
+  background: #ccc;
+  animation: typewriter 5s steps(13) 1s forwards infinite alternate,
+    blink 700ms steps(13) forwards infinite alternate;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
