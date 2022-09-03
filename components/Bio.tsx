@@ -1,4 +1,4 @@
-import { GitHub } from '@mui/icons-material';
+import { FaGithub } from 'react-icons/fa';
 import TypeWriter from './TypeWriter';
 
 const Bio = () => {
@@ -17,7 +17,7 @@ const Bio = () => {
         </p>
       </div>
       <div className='animate-desc btn btn-outline btn-primary flex gap-2 items-center w-max'>
-        <GitHub className='w-6 h-6' />
+        <FaGithub className='w-6 h-6' />
         <span className='tracking-wider'>My Github</span>
       </div>
     </div>

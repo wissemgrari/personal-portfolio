@@ -1,12 +1,11 @@
 import {
-  Menu,
-  Close,
-  Download,
-  Info,
-  Work,
-  CodeOff,
-  Person,
-} from '@mui/icons-material';
+  FaCloudDownloadAlt,
+  FaBriefcase,
+  FaCode,
+  FaUser,
+} from 'react-icons/fa';
+import { BiMenuAltRight } from 'react-icons/bi';
+import { BsInfoCircle, BsDownload } from 'react-icons/bs';
 
 import Image from 'next/image';
 
@@ -43,7 +42,7 @@ const Navbar = () => {
       {/* Menu icon */}
       {!openNavBar && (
         <div onClick={showMenu} className='icon cursor-pointer p-5'>
-          <Menu className='h-8 w-8 text-primary' />
+          <BiMenuAltRight className='h-9 w-9 text-primary' />
         </div>
       )}
       {/* Sidebar */}
@@ -53,38 +52,38 @@ const Navbar = () => {
       >
         {/* close icon */}
         <div onClick={closeMenu} className='self-end p-5 cursor-pointer'>
-          <Close className='w-8 h-8 text-primary' />
+          <span className='text-2xl text-primary'>&#10005;</span>
         </div>
         {/* Menu list */}
         <ul className='menu w-full text-lg space-y-6'>
           <li className='hover-bordered'>
             <a>
-              <Info className='w-8 h-8' />
+              <BsInfoCircle className='w-7 h-7' />
               <span>About</span>
             </a>
           </li>
           <li className='hover-bordered '>
             <a>
-              <Work className='w-8 h-8' />
+              <FaBriefcase className='w-7 h-7' />
               <span>Experience</span>
             </a>
           </li>
           <li className='hover-bordered '>
             <a>
-              <CodeOff className='w-8 h-8' />
+              <FaCode className='w-7 h-7' />
               <span>Work</span>
             </a>
           </li>
           <li className='hover-bordered '>
             <a>
-              <Person className='w-8 h-8' />
+              <FaUser className='w-7 h-7' />
               <span>Contact</span>
             </a>
           </li>
         </ul>
         {/* Resume */}
         <div className='btn btn-primary font-bold flex gap-1 justify-center items-center mx-5'>
-          <Download className='w-5 h-5' />
+          <FaCloudDownloadAlt className='w-6 h-6' />
           <span>Resume</span>
         </div>
       </div>
