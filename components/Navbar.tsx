@@ -47,44 +47,46 @@ const Navbar = () => {
       )}
       {/* Sidebar */}
       <div
-        className={`sidebar w-2/3
-          ${openNavBar ? 'translate-x-0 ' : 'translate-x-full'}`}
+        className={`sidebar w-2/3 h-screen
+          ${openNavBar ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {/* close icon */}
         <div onClick={closeMenu} className='self-end p-5 cursor-pointer'>
-          <span className='text-2xl text-primary'>&#10005;</span>
+          <span className='text-3xl text-primary'>&#10005;</span>
         </div>
-        {/* Menu list */}
-        <ul className='menu w-full text-lg space-y-6'>
-          <li className='hover-bordered'>
-            <a>
-              <BsInfoCircle className='w-7 h-7' />
-              <span>About</span>
-            </a>
-          </li>
-          <li className='hover-bordered '>
-            <a>
-              <FaBriefcase className='w-7 h-7' />
-              <span>Experience</span>
-            </a>
-          </li>
-          <li className='hover-bordered '>
-            <a>
-              <FaCode className='w-7 h-7' />
-              <span>Work</span>
-            </a>
-          </li>
-          <li className='hover-bordered '>
-            <a>
-              <FaUser className='w-7 h-7' />
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-        {/* Resume */}
-        <div className='btn btn-primary font-bold flex gap-1 justify-center items-center mx-5'>
-          <FaCloudDownloadAlt className='w-6 h-6' />
-          <span>Resume</span>
+        <div className='py-8 flex flex-col h-full justify-between'>
+          {/* Menu list */}
+          <ul className='menu w-full text-lg space-y-8'>
+            <li className='hover-bordered'>
+              <a>
+                <BsInfoCircle className='w-7 h-7' />
+                <span>About</span>
+              </a>
+            </li>
+            <li className='hover-bordered '>
+              <a>
+                <FaBriefcase className='w-7 h-7' />
+                <span>Experience</span>
+              </a>
+            </li>
+            <li className='hover-bordered '>
+              <a>
+                <FaCode className='w-7 h-7' />
+                <span>Work</span>
+              </a>
+            </li>
+            <li className='hover-bordered '>
+              <a>
+                <FaUser className='w-7 h-7' />
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+          {/* Resume */}
+          <div className='btn btn-primary font-bold flex gap-1 justify-center items-center mx-5'>
+            <FaCloudDownloadAlt className='w-6 h-6' />
+            <span>Resume</span>
+          </div>
         </div>
       </div>
     </nav>

@@ -45,8 +45,12 @@ module.exports = {
         },
         slideContent: {
           '0%': {
-            transform: 'translateY(-50px)',
+            transform: 'translateY(-80%)',
             opacity: '0',
+          },
+          '50%': {
+            transform: 'translateY(-50%)',
+            opacity: '0.5',
           },
           '100%': {
             transform: 'translateY(0)',

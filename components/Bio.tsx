@@ -5,7 +5,7 @@ const Bio = () => {
   return (
     <div className='bio mt-16 space-y-5'>
       <TypeWriter>wissem grari.</TypeWriter>
-      <h2 className='text-4xl font-lg text-grey animate-title'>
+      <h2 className='text-3xl font-lg text-grey animate-title'>
         I build things for the web.
       </h2>
       <div className='description animate-desc'>
@@ -17,8 +17,7 @@ const Bio = () => {
         </p>
       </div>
       <div className='animate-desc btn btn-outline btn-primary flex gap-2 items-center w-max'>
-        <FaGithub className='w-6 h-6' />
-        <span className='tracking-wider'>My Github</span>
+        <span className='tracking-wider'>contact me</span>
       </div>
     </div>
   );
